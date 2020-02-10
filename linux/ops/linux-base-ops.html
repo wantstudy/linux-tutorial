@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Linux 典型运维应用 | LINUX-TUTORIAL</title>
+    <meta name="description" content="数据库教程">
+    <meta name="generator" content="VuePress 1.3.0">
+    <link rel="icon" href="/linux-tutorial/favicon.ico">
+    
+    <link rel="preload" href="/linux-tutorial/assets/css/0.styles.341612c9.css" as="style"><link rel="preload" href="/linux-tutorial/assets/js/app.5b40d213.js" as="script"><link rel="preload" href="/linux-tutorial/assets/js/4.271fb7d6.js" as="script"><link rel="preload" href="/linux-tutorial/assets/js/30.05971cba.js" as="script"><link rel="prefetch" href="/linux-tutorial/assets/js/10.69fdd68c.js"><link rel="prefetch" href="/linux-tutorial/assets/js/11.eb7175b8.js"><link rel="prefetch" href="/linux-tutorial/assets/js/12.d35ea0e7.js"><link rel="prefetch" href="/linux-tutorial/assets/js/13.d45547e1.js"><link rel="prefetch" href="/linux-tutorial/assets/js/14.140732b5.js"><link rel="prefetch" href="/linux-tutorial/assets/js/15.3d1aaf01.js"><link rel="prefetch" href="/linux-tutorial/assets/js/16.314ab2af.js"><link rel="prefetch" href="/linux-tutorial/assets/js/17.92f6852c.js"><link rel="prefetch" href="/linux-tutorial/assets/js/18.7d20f4f6.js"><link rel="prefetch" href="/linux-tutorial/assets/js/19.72334cce.js"><link rel="prefetch" href="/linux-tutorial/assets/js/20.243efe4c.js"><link rel="prefetch" href="/linux-tutorial/assets/js/21.417fb182.js"><link rel="prefetch" href="/linux-tutorial/assets/js/22.0f4551f5.js"><link rel="prefetch" href="/linux-tutorial/assets/js/23.c6fbfffe.js"><link rel="prefetch" href="/linux-tutorial/assets/js/24.8af3672b.js"><link rel="prefetch" href="/linux-tutorial/assets/js/25.d455181f.js"><link rel="prefetch" href="/linux-tutorial/assets/js/26.c7c37a93.js"><link rel="prefetch" href="/linux-tutorial/assets/js/27.35736e6c.js"><link rel="prefetch" href="/linux-tutorial/assets/js/28.7e38ce7e.js"><link rel="prefetch" href="/linux-tutorial/assets/js/29.8e39c84f.js"><link rel="prefetch" href="/linux-tutorial/assets/js/31.b8a344be.js"><link rel="prefetch" href="/linux-tutorial/assets/js/32.eef67d50.js"><link rel="prefetch" href="/linux-tutorial/assets/js/33.f9b3e46a.js"><link rel="prefetch" href="/linux-tutorial/assets/js/34.4b89a7b6.js"><link rel="prefetch" href="/linux-tutorial/assets/js/35.2771ac52.js"><link rel="prefetch" href="/linux-tutorial/assets/js/36.65c30cd1.js"><link rel="prefetch" href="/linux-tutorial/assets/js/37.75e47fd2.js"><link rel="prefetch" href="/linux-tutorial/assets/js/38.422028ea.js"><link rel="prefetch" href="/linux-tutorial/assets/js/39.d44faca0.js"><link rel="prefetch" href="/linux-tutorial/assets/js/40.b227c625.js"><link rel="prefetch" href="/linux-tutorial/assets/js/41.22853ebc.js"><link rel="prefetch" href="/linux-tutorial/assets/js/42.315f55a5.js"><link rel="prefetch" href="/linux-tutorial/assets/js/43.a31e50a0.js"><link rel="prefetch" href="/linux-tutorial/assets/js/44.f5a927be.js"><link rel="prefetch" href="/linux-tutorial/assets/js/45.22054ecd.js"><link rel="prefetch" href="/linux-tutorial/assets/js/46.a80e39d8.js"><link rel="prefetch" href="/linux-tutorial/assets/js/47.b5a26654.js"><link rel="prefetch" href="/linux-tutorial/assets/js/48.39147ac9.js"><link rel="prefetch" href="/linux-tutorial/assets/js/49.17632bc5.js"><link rel="prefetch" href="/linux-tutorial/assets/js/5.a5e63d96.js"><link rel="prefetch" href="/linux-tutorial/assets/js/50.07ce41b7.js"><link rel="prefetch" href="/linux-tutorial/assets/js/51.896244ec.js"><link rel="prefetch" href="/linux-tutorial/assets/js/52.134b551e.js"><link rel="prefetch" href="/linux-tutorial/assets/js/53.e28aad0b.js"><link rel="prefetch" href="/linux-tutorial/assets/js/54.cd4ddf68.js"><link rel="prefetch" href="/linux-tutorial/assets/js/55.8bf172f1.js"><link rel="prefetch" href="/linux-tutorial/assets/js/56.50ff01fe.js"><link rel="prefetch" href="/linux-tutorial/assets/js/6.e2d98709.js"><link rel="prefetch" href="/linux-tutorial/assets/js/7.49d24c76.js"><link rel="prefetch" href="/linux-tutorial/assets/js/8.eb8b2625.js"><link rel="prefetch" href="/linux-tutorial/assets/js/9.0cff09de.js"><link rel="prefetch" href="/linux-tutorial/assets/js/vendors~flowchart.f5cdfab1.js"><link rel="prefetch" href="/linux-tutorial/assets/js/vendors~notification.7414fc30.js">
+    <link rel="stylesheet" href="/linux-tutorial/assets/css/0.styles.341612c9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/linux-tutorial/" class="home-link router-link-active"><img src="images/dunwu-logo-100.png" alt="LINUX-TUTORIAL" class="logo"> <span class="site-name can-hide">LINUX-TUTORIAL</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/linux-tutorial/linux/cli/" class="nav-link">
+  Linux 命令
+</a></div><div class="nav-item"><a href="/linux-tutorial/linux/ops/" class="nav-link router-link-active">
+  Linux 运维
+</a></div><div class="nav-item"><a href="/linux-tutorial/linux/soft/" class="nav-link">
+  Linux 软件运维
+</a></div><div class="nav-item"><a href="/linux-tutorial/docker/" class="nav-link">
+  Docker 教程
+</a></div><div class="nav-item"><a href="https://github.com/dunwu/blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  博客
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/dunwu/linux-tutorial" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/linux-tutorial/linux/cli/" class="nav-link">
+  Linux 命令
+</a></div><div class="nav-item"><a href="/linux-tutorial/linux/ops/" class="nav-link router-link-active">
+  Linux 运维
+</a></div><div class="nav-item"><a href="/linux-tutorial/linux/soft/" class="nav-link">
+  Linux 软件运维
+</a></div><div class="nav-item"><a href="/linux-tutorial/docker/" class="nav-link">
+  Docker 教程
+</a></div><div class="nav-item"><a href="https://github.com/dunwu/blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  博客
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/dunwu/linux-tutorial" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Linux 典型运维应用</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/linux-tutorial/linux/ops/linux-base-ops.html#_1-网络操作" class="sidebar-link">1. 网络操作</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/linux-tutorial/linux/ops/linux-base-ops.html#_1-1-无法访问外网域名" class="sidebar-link">1.1. 无法访问外网域名</a></li><li class="sidebar-sub-header"><a href="/linux-tutorial/linux/ops/linux-base-ops.html#_1-2-开启、关闭防火墙" class="sidebar-link">1.2. 开启、关闭防火墙</a></li><li class="sidebar-sub-header"><a href="/linux-tutorial/linux/ops/linux-base-ops.html#_1-3-配置网卡" class="sidebar-link">1.3. 配置网卡</a></li></ul></li><li><a href="/linux-tutorial/linux/ops/linux-base-ops.html#_2-系统维护" class="sidebar-link">2. 系统维护</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/linux-tutorial/linux/ops/linux-base-ops.html#_2-1-使用-ntp-进行时间同步" class="sidebar-link">2.1. 使用 NTP 进行时间同步</a></li></ul></li><li><a href="/linux-tutorial/linux/ops/linux-base-ops.html#_3-自动化脚本" class="sidebar-link">3. 自动化脚本</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/linux-tutorial/linux/ops/linux-base-ops.html#_3-1-linux-开机自启动脚本" class="sidebar-link">3.1. Linux 开机自启动脚本</a></li><li class="sidebar-sub-header"><a href="/linux-tutorial/linux/ops/linux-base-ops.html#_3-2-定时执行脚本" class="sidebar-link">3.2. 定时执行脚本</a></li></ul></li><li><a href="/linux-tutorial/linux/ops/linux-base-ops.html#_4-配置" class="sidebar-link">4. 配置</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/linux-tutorial/linux/ops/linux-base-ops.html#_4-1-设置-linux-启动模式" class="sidebar-link">4.1. 设置 Linux 启动模式</a></li></ul></li><li><a href="/linux-tutorial/linux/ops/linux-base-ops.html#_5-参考资料" class="sidebar-link">5. 参考资料</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="linux-典型运维应用"><a href="#linux-典型运维应用" class="header-anchor">#</a> Linux 典型运维应用</h1> <blockquote><p>💡 如果没有特殊说明，本文的案例都是针对 Centos 发行版本。</p></blockquote> <h2 id="_1-网络操作"><a href="#_1-网络操作" class="header-anchor">#</a> 1. 网络操作</h2> <h3 id="_1-1-无法访问外网域名"><a href="#_1-1-无法访问外网域名" class="header-anchor">#</a> 1.1. 无法访问外网域名</h3> <p>（1）在 hosts 中添加本机实际 IP 和本机实际域名的映射</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token builtin class-name">echo</span> <span class="token string">&quot;192.168.0.1 hostname&quot;</span> <span class="token operator">&gt;&gt;</span> /etc/hosts
+</code></pre></div><p>如果不知道本机域名，使用 <code>hostname</code> 命令查一下；如果不知道本机实际 IP，使用 <code>ifconfig</code> 查一下。</p> <p>（2）配置信赖的 DNS 服务器</p> <p>执行 <code>vi /etc/resolv.conf</code> ，添加以下内容：</p> <div class="language-bash extra-class"><pre class="language-bash"><code>nameserver <span class="token number">114.114</span>.114.114
+nameserver <span class="token number">8.8</span>.8.8
+</code></pre></div><blockquote><p>114.114.114.114 是国内老牌 DNS</p> <p>8.8.8.8 是 Google DNS</p> <p>👉 参考：<a href="https://www.zhihu.com/question/32229915" target="_blank" rel="noopener noreferrer">公共 DNS 哪家强<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></blockquote> <p>（3）测试一下能否 ping 通 www.baidu.com</p> <h3 id="_1-2-开启、关闭防火墙"><a href="#_1-2-开启、关闭防火墙" class="header-anchor">#</a> 1.2. 开启、关闭防火墙</h3> <p>firewalld 的基本使用</p> <div class="language-bash extra-class"><pre class="language-bash"><code>启动：systemctl start firewalld
+关闭：systemctl stop firewalld
+查看状态：systemctl status firewalld
+开机禁用：systemctl disable firewalld
+开机启用：systemctl <span class="token builtin class-name">enable</span> firewalld
+</code></pre></div><p>systemctl 是 CentOS7 的服务管理工具中主要的工具，它融合之前 service 和 chkconfig 的功能于一体。</p> <div class="language- extra-class"><pre class="language-text"><code>启动一个服务：systemctl start firewalld.service
+关闭一个服务：systemctl stop firewalld.service
+重启一个服务：systemctl restart firewalld.service
+显示一个服务的状态：systemctl status firewalld.service
+在开机时启用一个服务：systemctl enable firewalld.service
+在开机时禁用一个服务：systemctl disable firewalld.service
+查看服务是否开机启动：systemctl is-enabled firewalld.service
+查看已启动的服务列表：systemctl list-unit-files|grep enabled
+查看启动失败的服务列表：systemctl --failed
+</code></pre></div><p>配置 firewalld-cmd</p> <div class="language- extra-class"><pre class="language-text"><code>查看版本：firewall-cmd --version
+查看帮助：firewall-cmd --help
+显示状态：firewall-cmd --state
+查看所有打开的端口：firewall-cmd --zone=public --list-ports
+更新防火墙规则：firewall-cmd --reload
+查看区域信息:  firewall-cmd --get-active-zones
+查看指定接口所属区域：firewall-cmd --get-zone-of-interface=eth0
+拒绝所有包：firewall-cmd --panic-on
+取消拒绝状态：firewall-cmd --panic-off
+查看是否拒绝：firewall-cmd --query-panic
+</code></pre></div><p>开启防火墙端口</p> <div class="language- extra-class"><pre class="language-text"><code>添加：firewall-cmd --zone=public --add-port=80/tcp --permanent    （--permanent永久生效，没有此参数重启后失效）
+重新载入：firewall-cmd --reload
+查看：firewall-cmd --zone= public --query-port=80/tcp
+删除：firewall-cmd --zone= public --remove-port=80/tcp --permanent
+</code></pre></div><blockquote><p>👉 参考：<a href="https://www.cnblogs.com/moxiaoan/p/5683743.html" target="_blank" rel="noopener noreferrer">CentOS7 使用 firewalld 打开关闭防火墙与端口<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></blockquote> <h3 id="_1-3-配置网卡"><a href="#_1-3-配置网卡" class="header-anchor">#</a> 1.3. 配置网卡</h3> <p>使用 root 权限编辑 <code>/etc/sysconfig/network-scripts/ifcfg-eno16777736X</code> 文件</p> <p>参考以下进行配置：</p> <div class="language-properties extra-class"><pre class="language-properties"><code><span class="token attr-name">TYPE</span><span class="token punctuation">=</span><span class="token attr-value">Ethernet                        # 网络类型：Ethernet以太网</span>
+<span class="token attr-name">BOOTPROTO</span><span class="token punctuation">=</span><span class="token attr-value">none                       # 引导协议：自动获取、static静态、none不指定</span>
+<span class="token attr-name">DEFROUTE</span><span class="token punctuation">=</span><span class="token attr-value">yes                         # 启动默认路由</span>
+<span class="token attr-name">IPV4_FAILURE_FATAL</span><span class="token punctuation">=</span><span class="token attr-value">no                # 不启用IPV4错误检测功能</span>
+<span class="token attr-name">IPV6INIT</span><span class="token punctuation">=</span><span class="token attr-value">yes                         # 启用IPV6协议</span>
+<span class="token attr-name">IPV6_AUTOCONF</span><span class="token punctuation">=</span><span class="token attr-value">yes                    # 自动配置IPV6地址</span>
+<span class="token attr-name">IPV6_DEFROUTE</span><span class="token punctuation">=</span><span class="token attr-value">yes                    # 启用IPV6默认路由</span>
+<span class="token attr-name">IPV6_FAILURE_FATAL</span><span class="token punctuation">=</span><span class="token attr-value">no                # 不启用IPV6错误检测功能</span>
+<span class="token attr-name">IPV6_PEERDNS</span><span class="token punctuation">=</span><span class="token attr-value">yes</span>
+<span class="token attr-name">IPV6_PEERROUTES</span><span class="token punctuation">=</span><span class="token attr-value">yes</span>
+<span class="token attr-name">IPV6_PRIVACY</span><span class="token punctuation">=</span><span class="token attr-value">&quot;no&quot;</span>
+
+<span class="token attr-name">NAME</span><span class="token punctuation">=</span><span class="token attr-value">eno16777736                     # 网卡设备的别名（需要和文件名同名）</span>
+<span class="token attr-name">UUID</span><span class="token punctuation">=</span><span class="token attr-value">90528772-9967-46da-b401-f82b64b4acbc  # 网卡设备的UUID唯一标识号</span>
+<span class="token attr-name">DEVICE</span><span class="token punctuation">=</span><span class="token attr-value">eno16777736                   # 网卡的设备名称</span>
+<span class="token attr-name">ONBOOT</span><span class="token punctuation">=</span><span class="token attr-value">yes                           # 开机自动激活网卡</span>
+<span class="token attr-name">IPADDR</span><span class="token punctuation">=</span><span class="token attr-value">192.168.1.199                 # 网卡的固定IP地址</span>
+<span class="token attr-name">PREFIX</span><span class="token punctuation">=</span><span class="token attr-value">24                            # 子网掩码</span>
+<span class="token attr-name">GATEWAY</span><span class="token punctuation">=</span><span class="token attr-value">192.168.1.1                  # 默认网关IP地址</span>
+<span class="token attr-name">DNS1</span><span class="token punctuation">=</span><span class="token attr-value">8.8.8.8                         # DNS域名解析服务器的IP地址</span>
+</code></pre></div><p>修改完后，执行 <code>systemctl restart network.service</code> 重启网卡服务。</p> <h2 id="_2-系统维护"><a href="#_2-系统维护" class="header-anchor">#</a> 2. 系统维护</h2> <h3 id="_2-1-使用-ntp-进行时间同步"><a href="#_2-1-使用-ntp-进行时间同步" class="header-anchor">#</a> 2.1. 使用 NTP 进行时间同步</h3> <p>（1）先安装时钟同步工具 ntp</p> <div class="language- extra-class"><pre class="language-text"><code>yum -y install ntp
+</code></pre></div><p>ntp 的配置文件路径为： <code>/etc/ntp.conf</code></p> <p>（2）启动 NTP 服务</p> <div class="language-bash extra-class"><pre class="language-bash"><code>systemctl start ntpd.service
+</code></pre></div><p>（3）放开防火墙 123 端口</p> <p>NTP 服务的端口是 123,使用的是 udp 协议，所以 NTP 服务器的防火墙必须对外开放 udp 123 这个端口。</p> <div class="language- extra-class"><pre class="language-text"><code>/sbin/iptables -A INPUT -p UDP -i eth0 -s 192.168.0.0/24 --dport 123 -j ACCEPT
+</code></pre></div><p>（4）执行时间同步</p> <div class="language- extra-class"><pre class="language-text"><code>/usr/sbin/ntpdate ntp.sjtu.edu.cn
+</code></pre></div><p>ntp.sjtu.edu.cn 是上海交通大学 ntp 服务器。</p> <p>（5）自动定时同步时间</p> <p>执行如下命令，就可以在每天凌晨 3 点同步系统时间：</p> <div class="language- extra-class"><pre class="language-text"><code>echo &quot;* 3 * * * /usr/sbin/ntpdate ntp.sjtu.edu.cn&quot; &gt;&gt; /etc/crontab
+systemctl restart crond.service
+</code></pre></div><blockquote><p>👉 参考：https://www.cnblogs.com/quchunhui/p/7658853.html</p></blockquote> <h2 id="_3-自动化脚本"><a href="#_3-自动化脚本" class="header-anchor">#</a> 3. 自动化脚本</h2> <h3 id="_3-1-linux-开机自启动脚本"><a href="#_3-1-linux-开机自启动脚本" class="header-anchor">#</a> 3.1. Linux 开机自启动脚本</h3> <p>（1）在 <code>/etc/rc.local</code> 文件中添加命令</p> <p>如果不想将脚本粘来粘去，或创建链接，可以在 <code>/etc/rc.local</code> 文件中添加启动命令</p> <ol><li>先修改好脚本，使其所有模块都能在任意目录启动时正常执行;</li> <li>再在 <code>/etc/rc.local</code> 的末尾添加一行以绝对路径启动脚本的行;</li></ol> <p>例：</p> <p>执行 <code>vim /etc/rc.local</code> 命令，输入以下内容：</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token shebang important">#!/bin/sh</span>
+<span class="token comment">#</span>
+<span class="token comment"># This script will be executed *after* all the other init scripts.</span>
+<span class="token comment"># You can put your own initialization stuff in here if you don't</span>
+<span class="token comment"># want to do the full Sys V style init stuff.</span>
+
+<span class="token function">touch</span> /var/lock/subsys/local
+/opt/pjt_test/test.pl
+</code></pre></div><p>（2）在 <code>/etc/rc.d/init.d</code> 目录下添加自启动脚本</p> <p>Linux 在 <code>/etc/rc.d/init.d</code> 下有很多的文件，每个文件都是可以看到内容的，其实都是一些 shell 脚本或者可执行二进制文件。</p> <p>Linux 开机的时候，会加载运行 <code>/etc/rc.d/init.d</code> 目录下的程序，因此我们可以把想要自动运行的脚本放到这个目录下即可。系统服务的启动就是通过这种方式实现的。</p> <p>（3）运行级别设置</p> <p>简单的说，运行级就是操作系统当前正在运行的功能级别。</p> <div class="language- extra-class"><pre class="language-text"><code>不同的运行级定义如下:
+# 0 - 停机（千万不能把initdefault 设置为0 ）
+# 1 - 单用户模式       　　进入方法#init s = init 1
+# 2 - 多用户，没有 NFS
+# 3 - 完全多用户模式(标准的运行级)
+# 4 - 没有用到
+# 5 - X11 多用户图形模式（xwindow)
+# 6 - 重新启动 （千万不要把initdefault 设置为6 ）
+</code></pre></div><p>这些级别在 <code>/etc/inittab</code> 文件里指定，这个文件是 init 程序寻找的主要文件，最先运行的服务是放在/etc/rc.d 目录下的文件。</p> <p>在 <code>/etc</code> 目录下面有这么几个目录值得注意：rcS.d rc0.d rc1.d ... rc6.d (0，1... 6 代表启动级别 0 代表停止，1 代表单用户模式，2-5 代表多用户模式，6 代表重启) 它们的作用就相当于 redhat 下的 rc.d ，你可以把脚本放到 rcS.d，然后修改文件名，给它一个启动序号，如: S88mysql</p> <p>不过，最好的办法是放到相应的启动级别下面。具体作法:</p> <p>（1）先把脚本 mysql 放到 /etc/init.d 目录下</p> <p>（2）查看当前系统的启动级别</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ runlevel
+N <span class="token number">3</span>
+</code></pre></div><p>（3）设定启动级别</p> <div class="language- extra-class"><pre class="language-text"><code>#  98 为启动序号
+#  2 是系统的运行级别，可自己调整，注意不要忘了结尾的句点
+$ update-rc.d mysql start 98 2 .
+</code></pre></div><p>现在我们到 /etc/rc2.d 下，就多了一个 S98mysql 这样的符号链接。</p> <p>（4）重启系统，验证设置是否有效。</p> <p>（5）移除符号链接</p> <p>当你需要移除这个符号连接时，方法有三种：</p> <ol><li><p>直接到 <code>/etc/rc2.d</code> 下删掉相应的链接，当然不是最好的方法；</p></li> <li><p>推荐做法：<code>update-rc.d -f s10 remove</code></p></li> <li><p>如果 update-rc.d 命令你不熟悉，还可以试试看 rcconf 这个命令，也很方便。</p></li></ol> <blockquote><p>👉 参考：</p> <ul><li>https://blog.csdn.net/linuxshine/article/details/50717272</li> <li>https://www.cnblogs.com/ssooking/p/6094740.html</li></ul></blockquote> <h3 id="_3-2-定时执行脚本"><a href="#_3-2-定时执行脚本" class="header-anchor">#</a> 3.2. 定时执行脚本</h3> <p>（1）安装 crontab</p> <p>（2）开启 crontab 服务</p> <p>开机自动启动 crond 服务：<code>chkconfig crond on</code></p> <p>或者，按以下命令手动启动：</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 启动服务</span>
+systemctl start crond.service
+<span class="token comment"># 停止服务</span>
+systemctl stop crond.service
+<span class="token comment"># 重启服务</span>
+systemctl restart crond.service
+<span class="token comment"># 重新载入配置</span>
+systemctl reload crond.service
+<span class="token comment"># 查看状态</span>
+systemctl status crond.service
+</code></pre></div><p>（3）设置需要执行的脚本</p> <p>有两种方法：</p> <ul><li>在命令行输入：<code>crontab -e</code> 然后添加相应的任务，存盘退出。</li> <li>直接编辑 <code>/etc/crontab</code> 文件，即 <code>vi /etc/crontab</code>，添加相应的任务。</li></ul> <p>示例：</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token assign-left variable"><span class="token environment constant">SHELL</span></span><span class="token operator">=</span>/bin/bash
+<span class="token assign-left variable"><span class="token environment constant">PATH</span></span><span class="token operator">=</span>/sbin:/bin:/usr/sbin:/usr/bin
+<span class="token assign-left variable">MAILTO</span><span class="token operator">=</span>root
+
+<span class="token comment"># For details see man 4 crontabs</span>
+
+<span class="token comment"># Example of job definition:</span>
+<span class="token comment"># .---------------- minute (0 - 59)</span>
+<span class="token comment"># |  .------------- hour (0 - 23)</span>
+<span class="token comment"># |  |  .---------- day of month (1 - 31)</span>
+<span class="token comment"># |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...</span>
+<span class="token comment"># |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat</span>
+<span class="token comment"># |  |  |  |  |</span>
+<span class="token comment"># *  *  *  *  * user-name  command to be executed</span>
+
+<span class="token comment"># 每天早上3点时钟同步</span>
+* <span class="token number">3</span> * * * /usr/sbin/ntpdate ntp.sjtu.edu.cn
+
+<span class="token comment"># 每两个小时以root身份执行 /home/hello.sh 脚本</span>
+<span class="token number">0</span> */2 * * * root /home/hello.sh
+</code></pre></div><blockquote><p>👉 参考：<a href="https://blog.csdn.net/z_yong_cool/article/details/79288397" target="_blank" rel="noopener noreferrer">linux 定时执行脚本<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></blockquote> <h2 id="_4-配置"><a href="#_4-配置" class="header-anchor">#</a> 4. 配置</h2> <h3 id="_4-1-设置-linux-启动模式"><a href="#_4-1-设置-linux-启动模式" class="header-anchor">#</a> 4.1. 设置 Linux 启动模式</h3> <ol><li>停机(记得不要把 initdefault 配置为 0，因为这样会使 Linux 不能启动)</li> <li>单用户模式，就像 Win9X 下的安全模式</li> <li>多用户，但是没有 NFS</li> <li>完全多用户模式，准则的运行级</li> <li>通常不用，在一些特殊情况下可以用它来做一些事情</li> <li>X11，即进到 X-Window 系统</li> <li>重新启动 (记得不要把 initdefault 配置为 6，因为这样会使 Linux 不断地重新启动)</li></ol> <p>设置方法：</p> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">sed</span> -i <span class="token string">'s/id:5:initdefault:/id:3:initdefault:/'</span> /etc/inittab
+</code></pre></div><h2 id="_5-参考资料"><a href="#_5-参考资料" class="header-anchor">#</a> 5. 参考资料</h2> <ul><li><p><a href="https://www.cnblogs.com/moxiaoan/p/5683743.html" target="_blank" rel="noopener noreferrer">CentOS7 使用 firewalld 打开关闭防火墙与端口<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></li> <li><p><a href="https://blog.csdn.net/z_yong_cool/article/details/79288397" target="_blank" rel="noopener noreferrer">linux 定时执行脚本<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></li></ul></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/dunwu/linux-tutorial/edit/master/linux/ops/linux-base-ops.md" target="_blank" rel="noopener noreferrer">帮助我们改善此页面！</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <!----></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/linux-tutorial/assets/js/app.5b40d213.js" defer></script><script src="/linux-tutorial/assets/js/4.271fb7d6.js" defer></script><script src="/linux-tutorial/assets/js/30.05971cba.js" defer></script>
+  </body>
+</html>
